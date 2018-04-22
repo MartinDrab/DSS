@@ -35,7 +35,7 @@ void CThemeUtil::FreeLibrary()
 
 BOOL CThemeUtil::IsWinXP(void)
 {
-	return ::IsWindowsXPOrGreater();
+	return IsWindowsXPOrGreater();
 }
 
 BOOL CThemeUtil::OpenThemeData(HWND hWnd, LPCWSTR pszClassList)
