@@ -10,9 +10,6 @@
 #pragma once
 #endif // _MSC_VER > 1000
 
-#if defined(USE_HOARD)
-#pragma comment(lib, "lib\\winhoard.lib") 
-#endif 
 
 #define VC_EXTRALEAN		// Exclude rarely-used stuff from Windows headers
 //

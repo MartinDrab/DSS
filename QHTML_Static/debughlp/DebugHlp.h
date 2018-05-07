@@ -74,7 +74,6 @@ Purpose:	Debugging helpers
 	#define DBGH_VERSIONFOLDER "Debug"
 #endif
 
-	#pragma comment( lib, DBGH_BASELIBPATH DBGH_VERSIONFOLDER "\\debughlp.lib" )
 
 /*
 	#ifdef _WIN64
@@ -96,8 +95,6 @@ Purpose:	Debugging helpers
 	#endif	//	 _DEBUG
 	
 	#define DH_LIB_POST DH_PLATFORM DH_UNICODE DH_DEBUG
-	//#pragma message( "**** Linking against DebugHLP DebugHLP" DH_LIB_POST ".lib ****" )
-	#pragma comment( lib, "DebugHlp" DH_LIB_POST ".lib" )
 
 	#undef DH_LIB_POST
 	#undef DH_PLATFORM

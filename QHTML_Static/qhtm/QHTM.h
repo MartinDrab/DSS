@@ -72,16 +72,7 @@ Purpose:	GipsySoft HTML control
 	#define Q_LIB_POST Q_PLATFORM Q_UNICODE Q_DEBUG 
 */
 
-//	#pragma message( "**** Linking against QHTM " Q_LIB_NAME ".lib ****" )
-	//#pragma comment( lib, Q_BASELIBPATH Q_VERSIONFOLDER "\\qhtm.lib" )
 	#ifdef QHTM_LINK_STATIC_LIBS
-		//#pragma comment( lib, Q_BASELIBPATH Q_VERSIONFOLDER "\\DebugHlp.lib" )
-/*		#pragma comment( lib, Q_BASELIBPATH Q_VERSIONFOLDER "\\DataSource.lib" )
-		#pragma comment( lib, Q_BASELIBPATH Q_VERSIONFOLDER "\\ImgLib.lib" )
-		#pragma comment( lib, Q_BASELIBPATH Q_VERSIONFOLDER "\\libpng.lib" )
-		#pragma comment( lib, Q_BASELIBPATH Q_VERSIONFOLDER "\\ZLib.lib" )
-		#pragma comment( lib, Q_BASELIBPATH Q_VERSIONFOLDER "\\libjpg.lib" )	
-		#pragma comment( lib, Q_BASELIBPATH Q_VERSIONFOLDER "\\guitools.lib" )*/
 		#define Q_LIB_NAME	"qhtm"
 	#else	//	QHTM_LINK_STATIC_LIBS
 		#define Q_LIB_NAME	"qhtm"

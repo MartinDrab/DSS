@@ -23,48 +23,16 @@ Purpose:	GipsySoft HTML control
 		#ifdef _UNICODE
 			#ifdef _DEBUG
 
-				#pragma comment( lib, "DataSourceUD.lib" )
-				#pragma comment( lib, "DebugHlpUD.lib" )
-				#pragma comment( lib, "ImgLibUD.lib" )
-				#pragma comment( lib, "libpngUD.lib" )
-				#pragma comment( lib, "ZLibUD.lib" )
-				#pragma comment( lib, "jpeglibUD.lib" )	
-				#pragma comment( lib, "guitoolsUD.lib" )
-				#pragma comment( lib, "qhtmUSD.lib" )	
-
 			#else	//	_DEBUG
 
-				#pragma comment( lib, "DataSourceU.lib" )
-				#pragma comment( lib, "ImgLibU.lib" )
-				#pragma comment( lib, "libpngU.lib" )
-				#pragma comment( lib, "ZLibU.lib" )
-				#pragma comment( lib, "jpeglibU.lib" )	
-				#pragma comment( lib, "guitoolsU.lib" )
-				#pragma comment( lib, "qhtmUS.lib" )	
 
 			#endif	//	_DEBUG
 		#else	// _UNICODE
 
 			#ifdef _DEBUG
 
-				#pragma comment( lib, "DebugHlpD.lib" )
-				#pragma comment( lib, "DataSourceD.lib" )
-				#pragma comment( lib, "ImgLibD.lib" )
-				#pragma comment( lib, "libpngD.lib" )
-				#pragma comment( lib, "ZLibD.lib" )
-				#pragma comment( lib, "jpeglibD.lib" )	
-				#pragma comment( lib, "guitoolsD.lib" )
-				#pragma comment( lib, "qhtmSD.lib" )	
 
 			#else	//	_DEBUG
-
-				#pragma comment( lib, "DataSource.lib" )
-				#pragma comment( lib, "ImgLib.lib" )
-				#pragma comment( lib, "libpng.lib" )
-				#pragma comment( lib, "ZLib.lib" )
-				#pragma comment( lib, "jpeglib.lib" )	
-				#pragma comment( lib, "guitools.lib" )
-				#pragma comment( lib, "qhtmS.lib" )	
 
 			#endif	//	_DEBUG
 		#endif	//	 _UNICODE
@@ -77,26 +45,20 @@ Purpose:	GipsySoft HTML control
 			#ifdef _DEBUG
 				#if	_UNICODE
 					#pragma message( "**** Testing against QHTM qhtmUD.lib ****" )
-					#pragma comment( lib, "qhtmUD.lib" )
 				#else		//	 _UNICODE
 					#pragma message( "**** Testing against QHTM qhtmD.lib ****" )
-					#pragma comment( lib, "qhtmD.lib" )
 				#endif	//	 _UNICODE
 			#else	//	_DEBUG
 				#if	_UNICODE
 					#pragma message( "**** Testing against QHTM qhtmU.lib ****" )
-					#pragma comment( lib, "qhtmU.lib" )
 				#else		//	 _UNICODE
 					#pragma message( "**** Testing against QHTM qhtm.lib ****" )
-					#pragma comment( lib, "qhtm.lib" )
 				#endif	//	 _UNICODE
 			#endif	//	_DEBUG
 
 		#else	//	QHTM_TESTING
 			#if	_UNICODE
-				#pragma comment( lib, "qhtmU.lib" )
 			#else		//	 _UNICODE
-				#pragma comment( lib, "qhtm.lib" )
 			#endif	//	 _UNICODE
 		#endif	//	//	QHTM_TESTING
 
