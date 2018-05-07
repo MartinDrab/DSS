@@ -32,7 +32,7 @@
 // Line 44 : Added bBg parameter.
 // Line 83 ~ 87 : If bBg is TRUE, copy background.
 //
-class CMemDC : public CDC {
+class CFFMemDC : public CDC {
 private:	
 	CBitmap		m_bitmap;		// Offscreen bitmap
 	CBitmap*	m_oldBitmap;	// bitmap originally found in CMemDC
@@ -41,7 +41,7 @@ private:
 	BOOL		m_bMemDC;		// TRUE if CDC really is a Memory DC.
 public:
 	
-	CMemDC(CDC* pDC, const CRect* pRect = NULL, BOOL bBg = FALSE) : CDC()
+	CFFMemDC(CDC* pDC, const CRect* pRect = NULL, BOOL bBg = FALSE) : CDC()
 	{
 		ASSERT(pDC != NULL); 
 
@@ -87,7 +87,7 @@ public:
 			FillSolidRect(m_rect, pDC->GetBkColor());
 	}
 	
-	~CMemDC()	
+	~CFFMemDC()	
 	{		
 		if (m_bMemDC) {
 			// Copy the offscreen bitmap onto the screen.
@@ -105,13 +105,13 @@ public:
 	}
 	
 	// Allow usage as a pointer	
-	CMemDC* operator->() 
+	CFFMemDC* operator->() 
 	{
 		return this;
 	}	
 
 	// Allow usage as a pointer	
-	operator CMemDC*() 
+	operator CFFMemDC*() 
 	{
 		return this;
 	}

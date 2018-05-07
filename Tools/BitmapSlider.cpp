@@ -75,7 +75,7 @@ void CBitmapSlider::OnPaint()
 	CPaintDC dcOrigin(this);
 
 	// "Flicker Free Drawing In MFC" by Keith Rule
-	CMemDC dc( &dcOrigin, &m_rect, m_bTransparentChannel );
+	CFFMemDC dc( &dcOrigin, &m_rect, m_bTransparentChannel );
 
 	CDC dcMem;
 	dcMem.CreateCompatibleDC( &dc );

@@ -5,7 +5,7 @@
 #include "BitmapExt.h"
 #include "DSSProgress.h"
 #include "DSSTools.h"
-#include "..\CFitsio\fitsio.h"
+#include "fitsio.h"
 
 class CFITSHeader
 {

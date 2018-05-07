@@ -189,7 +189,7 @@
       <PreprocessorDefinitions>DSS_COMMANDLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>cfitsio.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -222,7 +222,7 @@
       <PreprocessorDefinitions>DSS_COMMANDLINE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>cfitsio.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
       <GenerateDebugInformation>true</GenerateDebugInformation>

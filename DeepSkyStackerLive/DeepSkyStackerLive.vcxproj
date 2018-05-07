@@ -232,7 +232,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>htmlhelp.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>cfitsio.lib;htmlhelp.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences />
@@ -272,7 +272,7 @@
       <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Link>
-      <AdditionalDependencies>htmlhelp.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>cfitsio.lib;htmlhelp.lib;zlibstat.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences />

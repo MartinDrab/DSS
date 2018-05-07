@@ -5,14 +5,15 @@
     <SDKPATH>c:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\</SDKPATH>
   </PropertyGroup>
   <PropertyGroup>
-    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)</OutDir>
-    <IntDir>$(SolutionDir)tmp\$(ProjectName)\$(Platform)\$(Configuration)</IntDir>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)tmp\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
     <IncludePath>$(SolutionDir)include;$(SDKPATH)include;D:\Libraries-precompiled\Boost\Boost\include\boost-1_43;D:\Libraries-precompiled\Prof-UIS\ProfAuto;D:\Libraries-precompiled\Prof-UIS\Include;D:\Libraries-precompiled\Prof-UIS\ProfSkin;C:\Program Files\Microsoft SQL Server\100\SDK\Include;$(IncludePath)</IncludePath>
     <LibraryPath>$(SDKPATH)lib;C:\Program Files\Microsoft SQL Server\100\SDK\Lib\x86;D:\Libraries-precompiled\Prof-UIS\Bin_1000;D:\Libraries-precompiled\Boost\Boost\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_USING_V110_SDK71_;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)libs\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
