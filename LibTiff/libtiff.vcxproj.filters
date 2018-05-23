@@ -157,22 +157,7 @@
     <ClInclude Include="tif_predict.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tiff.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="tiff2pdf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tiffconf.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tiffconf.vc.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tiffconf.wince.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="tiffio.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="tiffio.hxx">
@@ -181,10 +166,25 @@
     <ClInclude Include="tiffiop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="tiffvers.h">
+    <ClInclude Include="uvcode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="uvcode.h">
+    <ClInclude Include="..\include\tiff.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tiffconf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tiffconf.vc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tiffconf.wince.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tiffio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\tiffvers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -250,18 +250,18 @@
     <ClCompile Include="tif_zip.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\include\tiff.h" />
+    <ClInclude Include="..\include\tiffconf.h" />
+    <ClInclude Include="..\include\tiffconf.vc.h" />
+    <ClInclude Include="..\include\tiffconf.wince.h" />
+    <ClInclude Include="..\include\tiffio.h" />
+    <ClInclude Include="..\include\tiffvers.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="StdAfx.h" />
     <ClInclude Include="t4.h" />
-    <ClInclude Include="tiff.h" />
     <ClInclude Include="tiff2pdf.h" />
-    <ClInclude Include="tiffconf.h" />
-    <ClInclude Include="tiffconf.vc.h" />
-    <ClInclude Include="tiffconf.wince.h" />
-    <ClInclude Include="tiffio.h" />
     <ClInclude Include="tiffio.hxx" />
     <ClInclude Include="tiffiop.h" />
-    <ClInclude Include="tiffvers.h" />
     <ClInclude Include="tif_config.h" />
     <ClInclude Include="tif_config.vc.h" />
     <ClInclude Include="tif_config.wince.h" />

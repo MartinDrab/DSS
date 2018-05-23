@@ -3,7 +3,6 @@
  * For conditions of distribution and use, see copyright notice in zlib.h
  */
 
-#define _CRT_SECURE_NO_WARNINGS
 #include "gzguts.h"
 
 #if defined(_WIN32) && !defined(__BORLANDC__) && !defined(__MINGW32__)
